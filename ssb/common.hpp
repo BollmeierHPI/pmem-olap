@@ -5,8 +5,12 @@
 #include "allocator.h"
 #include "libpmem.h"
 
-#define SOCKET_1_PATH "/mnt/nvrams1/ssb/"
-#define SOCKET_2_PATH "/mnt/nvrams2/ssb/"
+#ifndef SOCKET_1_PATH
+    #define SOCKET_1_PATH "/mnt/nvrams1/ssb/"
+#endif
+#ifndef SOCKET_2_PATH
+    #define SOCKET_2_PATH "/mnt/nvrams2/ssb/"
+#endif
 
 #define LO_TAB_PATH   "lineorder_sf100_full_random.tbl"
 #define LO_TAB_A_PATH "lineorder_sf100_a.tbl"

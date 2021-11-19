@@ -10,8 +10,9 @@ First, [DASH](https://github.com/baotonglu/dash) has to be initialized:
 ```
 Then, build the ssb binaries:
 ```sh
-make
+make -DSOCKET_1_PATH=<table path> -DSOCKET_2_PATH=<table path2>
 ```
+Where *table path* corresponds to the path where the tables provided for the ssb are placed; if you want to measure ssb on PMEM, these paths **must** refer to different PMEM packages.
 
 This will give you three `ssb_pmem`, `ssb_dram` and `ssb_ssd` binaries which then can be used in the benchmarking scripts.
 

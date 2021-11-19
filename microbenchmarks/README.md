@@ -4,13 +4,13 @@ This directory contains the source code for the performed microbenchmarks.
 
 ## Building
 
-
 ```sh
 mkdir build
 cd build
 cmake ..
 cmake --build .
 ```
+**Note: If your linker does not find libpmem(2), please adjust the HINTS given in cmake/FindLibpmem(2).cmake according to your installation path.**
 
 This will give you a `nvm_db_benchmark` binary which then can be used in the benchmarking scripts.
 

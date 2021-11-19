@@ -2,6 +2,8 @@
 
 git clone https://github.com/baotonglu/dash.git
 cd dash
+# Checkout old version used for benchmarking
+git checkout 7e1551f03dfbd901b38af405b52d6b919235c379
 git clone https://github.com/XiangpengHao/VeryPM.git
 
 # Make small modifications

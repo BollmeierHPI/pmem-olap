@@ -4,7 +4,11 @@ This directory contains the source code for the performed SSB benchmarks.
 
 ## Building
 
-
+First, [DASH](https://github.com/baotonglu/dash) has to be initialized:
+```
+./init_dash.sh
+```
+Then, build the ssb binaries:
 ```sh
 make
 ```

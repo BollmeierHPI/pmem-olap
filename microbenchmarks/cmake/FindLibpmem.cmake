@@ -1,10 +1,10 @@
 FIND_PATH(LIBPMEM_INCLUDE_DIR NAME libpmem.h
-    HINTS /usr/include/ /scratch/pmdk1.10/include/
+    HINTS /usr/include/ /scratch/pmdk1.10/include/ /scratch/pmem/pmdk1.10/include/
     NO_DEFAULT_PATH NO_CMAKE_ENVIRONMENT_PATH NO_CMAKE_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_SYSTEM_PATH 
 )
 
 FIND_LIBRARY(LIBPMEM_LIBRARY NAME pmem
-    HINTS /usr/lib/ /scratch/pmdk1.10/lib/
+    HINTS /usr/lib/ /scratch/pmdk1.10/lib/ /scratch/pmem/pmdk1.10/lib/
     NO_DEFAULT_PATH NO_CMAKE_ENVIRONMENT_PATH NO_CMAKE_PATH NO_SYSTEM_ENVIRONMENT_PATH NO_CMAKE_SYSTEM_PATH 
     )
 
